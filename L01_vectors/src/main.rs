@@ -21,4 +21,15 @@ fn main() {
     colors.push(String::from("red"));
     colors.push(String::from("green"));
     colors.push(String::from("blue"));
+
+    println!("{:?}", colors);
+    colors.reverse();
+    println!("{:?}", colors);
+
+    let codes: Vec<u8> = (50..=100).collect();
+    println!("{:?}", codes);
+
+    let numbers = (8..=27).collect::<Vec<u8>>();
+    let first_two = numbers[0..2].to_vec();
+    println!("{:?}", first_two);
 }
